@@ -20,7 +20,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 800px;
+    height: 600px;
 } /*  header settings */
 
 .header-list li {
@@ -114,18 +114,18 @@ section.title-section{
     font-size: 30px;
 } /* edit practice info section */
 
+div.practice-join-us{
+    font-size: 48px;
+}
+
 .practice-list{
-    list-style-type: disc;
+    list-style-type: none;
     padding-left: 20px;
 } /* customizing when/where/who list */
 
 .practice-list li {
     margin-bottom: 20px; 
 } /* Add spacing between list items */
-
-.link-section {
-    text-align: center;
-} /* center buttons */
 
 
 button {
