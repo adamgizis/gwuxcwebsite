@@ -1,29 +1,49 @@
+/* PAGE SETTINGS */
+
 body{
     background: rgb(219, 223, 230);
     color: rgb(0, 59, 92);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
-} /* page settings */
+}
 
+
+/* HEADER & FOOTER SETTINGS */
+
+/* header & footer & subsection settings */
 header, footer, .text-section div{
     background: rgb(163, 203, 250);
     padding: 20px;
-} /* header & footer & subsection settings */
+}
 
 header, footer{
     text-align: center;
 }
 
+/* header settings */
 header {
     background-image: url("images/header-img.png");
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: 1500px;
+    background-position: 0 bottom; /* Start the background at the bottom left */
+    background-repeat: repeat-x; /* Repeat the background horizontally */
+    background-size: 1500px 200px; /* Adjust this to your desired size */
     height: 130px;
-} /*  header settings */
+    animation: scroll-background 20s linear infinite; /* Apply the animation */
+}
 
-.header-list {
+/* header photo animation*/
+@keyframes scroll-background {
+    0% {
+        background-position: 0 bottom;
+    }
+    100% {
+        background-position: 1500px bottom; /* Adjust this value to the width of your image */
+    }
+}
+
+/* Initially hide hamburger menu */
+
+.main-menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,22 +52,24 @@ header {
     margin: 0;
 }
 
-
-.header-list li {
+/*  header nav settings */
+.main-menu li {
     display: inline-block;
     background-color: white;
     margin: 0 20px;
     margin-bottom: 0px;
     padding: 5px;
     border-radius: 2px;
-} /*  header nav settings */
+}
 
-.header-list li.logo {
+/* make logo transparent */
+.main-menu li.logo {
     background-color: transparent;
     padding: 0;
     margin: 0;
-} /* make logo transparent */
+}
 
+/* logo settings */
 .logo a {
     background-image: url("images/logo-transparent.png");
     background-size: 200px;
@@ -60,54 +82,151 @@ header {
     text-indent: -999999px;
     top: -20px;
     margin-right: -100px;
-} /* logo settings */
+}
 
+/* links settings */
 a {
     text-decoration: none; }
-    /* links settings */
 
+/* underline links on hover */
 a:hover {
     text-decoration: underline;
-} /* underline links on hover */
+}
 
+/* links are same color once visited */
 a:visited {
     color: rgb(0, 59, 92);
-} /* links are same color once visited */
+}
 
-@media screen and (max-width: 800px) and (min-width: 401px) {
-    section {
-        background: white
+
+.ham-nav .hamburger-menu {
+    display: block; /* Center the hamburger menu icon horizontally */
+    margin-top: 40px; /* Adjust vertical spacing as needed */
+}
+.hamburger-menu{
+    position: relative;
+    cursor: pointer;
+}
+.hamburger-menu img {
+    height: auto;
+    width: 100px;
+    background-color: transparent;
+    position: absolute;
+    left: 40px;
+    transform: translate(-50%, -50%);
+    transition: .3s ease
+}
+
+.off-screen-menu {
+    display: none; /* Hide the off-screen menu initially */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999; /* Ensure it appears above other content */
+}
+.off-screen-menu.active {
+    display: block; /* Show the off-screen menu when active */
+}
+.off-screen-menu ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 130px;
+    margin-top: 14px;
+}
+
+.off-screen-menu ul li {
+    text-align: left; /* Align text to the left */
+    padding: 2px;
+    font-size: 15px;
+}
+
+
+/* Hamburger menu - responsive adjustments */
+@media (max-width: 900px) {
+    .main-menu {
+        display: none; 
     }
 }
 
+@media (min-width: 900px) {
+    .ham-nav {
+        display: none; 
+    }
+}
+
+.header-logo {
+    display: none;
+}
+
+/* Show logo only for screens less than 900px wide */
+@media (max-width: 900px) {
+    .header-logo {
+        display: block;
+        height: 100px;
+        width: auto;
+        margin: 0 auto;
+        margin-top: -40px;
+    }
+}
+@media (max-width: 700px) {
+    .header-logo {
+        display: block;
+        height: 100px;
+        width: auto;
+        margin-right: 10px;
+        margin-top: -40px;
+    }
+}
+
+
+/* APPLIES TO ALL PAGES*/
+/* section settings */
 section{
     padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-} /* section settings */
-
-section.team-pic{
-    width: 100%;
-    max-width: 100%;
 }
 
+/* align title & subtitle */
 section.title-section{
     flex-direction: column;
     align-items: center;
-} /* align title & subtitle */
+} 
 
+/* Edit page title */
 .page-title {
     font-size: 60px; 
     margin-bottom: 10px;
     text-align: center;
-} /* Edit page title */
+} 
 
+/* Edit page subtitle */
 .page-subtitle {
     font-size: 24px;
     text-align: center;
-} /* Edit page subtitle */
+} 
 
+
+/* HOME PAGE SETTINGS */
+
+/* Team pic */
+
+.team-pic img {
+    max-width: 100%; /* Ensure the image does not exceed the width of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make the image a block element to center it horizontally */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.links-info h3 {
+    font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: -20px;
+}
+
+/* Edit race section */
 .race-section figure{
     display: inline-block;
     margin: auto;
@@ -115,8 +234,9 @@ section.title-section{
     width: 400px;
     text-transform: uppercase;
     font-size: 20px;
-} /* Edit race section */
+} 
 
+/* Edit images in race section */
 .race-section figure img{
     width: 100%; /* Make the images responsive within the figure */
     max-width: 100%;
@@ -124,32 +244,42 @@ section.title-section{
     border-radius: 50%;
     box-shadow: gray 0 0 10px;
 }
-/* Edit images in race section */
 
+/* edit practice info section */
 .practice-section{
     flex-direction: column;
     font-size: 30px;
     text-align: center;
-} /* edit practice info section */
+} 
 
+/* edit practice info section */
 .practice-section div{
     font-size: 30px;
-} /* edit practice info section */
+    margin-bottom: 100px;
+}
+@media (max-width: 900px) {
+    .practice-section div{
+        font-size: 20px;
+    }
+}
 
 div.practice-join-us{
     font-size: 48px;
+    margin-bottom: -30px;
 }
 
+/* customizing when/where/who list */
 .practice-list{
     list-style-type: none;
     padding-left: 20px;
-} /* customizing when/where/who list */
+} 
 
+/* Add spacing between list items */
 .practice-list li {
     margin-bottom: 20px; 
-} /* Add spacing between list items */
+} 
 
-
+/* button customizations */
 button {
     background: rgb(0, 59, 92); 
     color: white;
@@ -158,8 +288,9 @@ button {
     cursor: pointer;
     display: block;
     margin: 20px auto;
-} /* button customizations */
+} 
 
+/* change button highight color */
 button:hover {
     background: rgb(168, 153, 104);  
-} /* change button highight color */
+} 

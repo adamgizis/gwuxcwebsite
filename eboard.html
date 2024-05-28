@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav>
-            <ul class="header-list">
+            <ul class="main-menu">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="eboard.html">Meet Eboard</a></li>
                 <li><a href="routes.html">Routes</a></li>
@@ -18,6 +18,21 @@
                 <li><a href="records.html">Club Records</a></li>
             </ul>
         </nav>
+        <nav class="ham-nav">
+            <div class="hamburger-menu">
+                <img src="images/menu-img.png" alt="Menu">
+            </div>
+            <div class="off-screen-menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="eboard.html">Meet Eboard</a></li>
+                    <li><a href="routes.html">Routes</a></li>
+                    <li><a href="dues.html">Dues & Donations</a></li>
+                    <li><a href="records.html">Club Records</a></li>
+                </ul>
+            </div>
+        </nav>
+        <img class="header-logo" src="images/logo-transparent.png" alt="Club XC Logo">
     </header>
     
     <section class="title-section">
@@ -32,5 +47,26 @@
     
 
     <footer>George Washington University · gwuclubcrosscountry@gmail.com   </footer>
+
+    <script>
+        // Select the hamburger menu and off-screen menu elements
+        const hamMenu = document.querySelector(".hamburger-menu");
+        const offScreenMenu = document.querySelector(".off-screen-menu");
+
+        // Add click event listener to the hamburger menu icon
+        hamMenu.addEventListener("click", () => {
+            // Toggle the 'active' class on the off-screen menu
+            offScreenMenu.classList.toggle("active");
+        });
+
+        // Close the off-screen menu when clicking outside of it
+        document.addEventListener("click", (event) => {
+            if (!event.target.closest(".ham-nav")) {
+                hamMenu.classList.remove("active");
+                offScreenMenu.classList.remove("active");
+            }
+        });
+    </script>
+    
 </body>
 </html>
