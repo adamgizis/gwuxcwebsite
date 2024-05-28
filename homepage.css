@@ -136,7 +136,7 @@ div.practice-join-us{
 .race-pics figure, .fun-run-pics figure{
     display: inline-block;
 }
-.race-pics img, .fun-run-pics img{
+.race-pics figure img, .fun-run-pics figure img{
     border-radius: 50%;
 }
 
