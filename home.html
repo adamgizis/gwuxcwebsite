@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GWU Club Cross Country</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="homepage.css">
 </head>
 
 <body>
@@ -12,12 +13,12 @@
     <header>
         <nav>
             <ul class="main-menu">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="eboard.html">Meet Eboard</a></li>
-                <li><a href="routes.html">Routes</a></li>
+                <li><a href="home.html"><strong>Home</strong></a></li>
+                <li><a href="eboard.html"><strong>Meet Eboard</strong></a></li>
+                <li><a href="routes.html"><strong>Routes</strong></a></li>
                 <li class="logo"><a href="home.html">GW Club XC logo</a></li>
-                <li><a href="dues.html">Dues & Donations</a></li>
-                <li><a href="records.html">Club Records</a></li>
+                <li><a href="dues.html"><strong>Dues & Donations</strong></a></li>
+                <li><a href="records.html"><strong>Club Records</strong></a></li>
             </ul>
         </nav>
         <nav class="ham-nav">
@@ -50,8 +51,8 @@
         <div class="practice-join-us">
             <p><strong>Come join us at practice!</strong></p>
         </div>
-        <div>
-            <ul class="practice-list">
+        <div class="practice-details">
+            <ul>
                 <li><strong>When: </strong>Every weekday (M-F) at 5:15pm</li>
                 <li><strong>Where: </strong>University Yard, by Bell Hall and the Textile Museum</li>
                 <li><strong>Who: </strong>Everyone! We welcome runners of all paces and distances!</li>
@@ -59,9 +60,11 @@
         </div>
     </section>
 
+    <section class="race-pics-blurb home">
+        <h4>Compete with the team!</h4>
+    </section>
 
-
-    <section class="race-section">
+    <section class="race-pics home-pics">
             <figure>
                 <img src="images/cross-country-pic.jpg" alt="Cross country running">
                 <figcaption>Cross Country</figcaption>
@@ -76,6 +79,82 @@
             </figure>
     </section>
 
+    <section class="dc-pics-blurb home">
+        <h4>Explore the city!</h4>
+    </section>
+
+    <section class="dc-pics home-pics">
+        <div>
+            <figure>
+                <img src="images/white-house.jpg" alt="Club XC at white house">
+            </figure>
+            <figure>
+                <img src="images/airport.jpg" alt="Club XC at airport">
+            </figure>
+            <figure>
+                <img src="images/lincoln-memorial.jpg" alt="Club XC at Lincoln">
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <img src="images/capitol.jpg" alt="Club XC at capitol">
+            </figure>
+            <figure>
+                <img src="images/iwo-jima.jpg" alt="Club XC at iwo jima">
+            </figure>
+        </div>
+    </section>
+
+    <section class="fun-run-pics-blurb home">
+        <h4>Participate in fun runs</h4>
+    </section>
+
+    <section class="fun-run-pics home-pics">
+        <figure>
+            <img src="images/hot-soup-run.jpg" alt="Hot soup run">
+            <figcaption>Hot Soup Run</figcaption>
+        </figure>
+        <figure>
+            <img src="images/midnight-monument-run.jpg" alt="Midnight Monument Run">
+            <figcaption>Midnight Monument Run</figcaption>
+        </figure>
+        <figure>
+            <img src="images/krispy-kreme-5k.jpg" alt="Krispy Kreme 5k">
+            <figcaption>Krispy Kreme 5k</figcaption>
+        </figure>
+        <figure>
+            <img src="images/glow-run.jpg" alt="Glow run">
+            <figcaption>Glow Run</figcaption>
+        </figure>
+    </section>
+
+    <section class="extra-pics-blurb home">
+        <h4>& more!</h4>
+    </section>
+    
+    <section class="extra-pics home-pics">
+        <div>
+            <figure>
+                <img src="images/snowball-fight.jpg" alt="track running">
+            </figure>
+            <figure>
+                <img src="images/frisbee.jpg" alt="Cross country running">
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <img src="images/evil-ismael.jpg" alt="GW Club XC runs the DC Half">
+            </figure>
+            <figure>
+                <img src="images/amelia-award.jpg" alt="track running">
+            </figure>
+            <figure>
+                <img src="images/intramural.jpg" alt="track running">
+            </figure>
+        </div>
+    </section>
+
+
     <section class="links-info">
         <h3>Connect with us!</h3>
     </section>
@@ -89,25 +168,52 @@
 
     <footer>George Washington University · gwuclubcrosscountry@gmail.com   </footer>
 
+   <!--HAMBURGER MENU-->
+   <script>
+    // Select the hamburger menu and off-screen menu elements
+    const hamMenu = document.querySelector(".hamburger-menu");
+    const offScreenMenu = document.querySelector(".off-screen-menu");
+
+    // Add click event listener to the hamburger menu icon
+    hamMenu.addEventListener("click", () => {
+        // Toggle the 'active' class on the off-screen menu
+        offScreenMenu.classList.toggle("active");
+    });
+
+    // Close the off-screen menu when clicking outside of it
+    document.addEventListener("click", (event) => {
+        if (!event.target.closest(".ham-nav")) {
+            hamMenu.classList.remove("active");
+            offScreenMenu.classList.remove("active");
+        }
+    });
+    </script>
+    <!--FADE IN-->
     <script>
-        // Select the hamburger menu and off-screen menu elements
-        const hamMenu = document.querySelector(".hamburger-menu");
-        const offScreenMenu = document.querySelector(".off-screen-menu");
-
-        // Add click event listener to the hamburger menu icon
-        hamMenu.addEventListener("click", () => {
-            // Toggle the 'active' class on the off-screen menu
-            offScreenMenu.classList.toggle("active");
-        });
-
-        // Close the off-screen menu when clicking outside of it
-        document.addEventListener("click", (event) => {
-            if (!event.target.closest(".ham-nav")) {
-                hamMenu.classList.remove("active");
-                offScreenMenu.classList.remove("active");
-            }
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll(".practice-join-us, .practice-details, .race-pics-blurb, .race-pics, .dc-pics-blurb, .dc-pics, .fun-run-pics-blurb, .fun-run-pics, .extra-pics-blurb, .extra-pics, .links-info, .links-section");
+    
+            const fadeInOnScroll = () => {
+                const windowHeight = window.innerHeight;
+    
+                sections.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+    
+                    if (sectionTop - windowHeight < 0) {
+                        section.classList.add("visible");
+                    } else {
+                        section.classList.remove("visible");
+                    }
+                });
+            };
+    
+            window.addEventListener("scroll", fadeInOnScroll);
+            fadeInOnScroll(); // Trigger once on load
         });
     </script>
+    
+    
+    
     
 </body>
 </html>
