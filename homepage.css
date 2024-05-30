@@ -135,6 +135,7 @@ div.practice-join-us{
 
 .race-pics figure, .fun-run-pics figure{
     display: inline-block;
+    font-size: 20px;
 }
 .race-pics figure img, .fun-run-pics figure img{
     border-radius: 50%;
@@ -152,28 +153,40 @@ div.practice-join-us{
 }
 
 
-/* JOIN US / LINKS SECTION */
+/* JOIN US - LINKS SECTION */
 
 /* Edit links section */
 .links-info h3 {
-    font-size: 30px;
+    font-size: 48px;
     margin-top: 100px;
     margin-bottom: -20px;
 }
 
 /* button customizations */
-button {
-    background: rgb(0, 59, 92); 
-    color: white;
-    padding: 15px 30px;
-    font-size: 16px;
-    cursor: pointer;
-    display: block;
-    margin: 15px;
-    border-radius: 10%;
-} 
 
-/* change button highight color */
-button:hover {
-    background: rgb(168, 153, 104);  
-} 
+.links-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    margin-bottom: 100px;
+}
+
+.links-section a {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0 25px;
+}
+
+.links-section a img {
+    display: block;
+    max-width: 80px;
+    height: auto;
+}
+
+.links-section a:hover img {
+    opacity: 0.8; /* Add a hover effect if desired */
+}
