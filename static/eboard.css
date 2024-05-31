@@ -1,9 +1,143 @@
-.title-section{
-    background-color: red;
-}
+
+/* TITLE SECTION */
+
 .title-section img {
-    max-width: 200px; /* Ensure the image does not exceed the width of its container */
+    max-width: 65%; /* Ensure the image does not exceed the width of its container */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Make the image a block element to center it horizontally */
     margin: 0 auto; /* Center the image horizontally */
+    border: 1px solid white;
+    box-shadow: gray 0 0 10px;
+}
+
+
+.meet-eboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* MEET EBOARD SECTION */
+.left-side, .right-side {
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.left-side .card {
+    padding-left: 100px;
+}
+
+.right-side {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.meet-eboard h3 {
+    font-size: 48px;
+}
+
+.meet-eboard a {
+    font-size: 24px;
+}
+
+.eboard-role {
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .hidden-words {
+        display: none;
+    }
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    div.right-side.eboard-role {
+        display: none;
+    }
+    .eboard-role {
+        flex: 1;
+        padding-right: 20px;
+        }
+    .individual-pic {
+        flex: 1;
+        padding-left: 20px;
+    }
+    .meet-eboard {
+        flex-direction: column;
+    }
+    .eboard-role {
+        margin-bottom: 20px;
+    }
+    .card {
+        display: flex;
+        justify-content: center; /* Center the card horizontally */
+        align-items: center;}
+}
+
+
+/* IMAGE FLIP */
+.card {
+    perspective: 1000px; /* Create a 3D perspective */
+    width: 450px; /* Set the width of the card */
+    height: 450px; /* Set the height of the card */
+    position: relative;
+}
+.card-front,
+.card-back {
+    position: absolute;
+    width: 450px; /* Set the width of the card */
+    height: 450px; /* Set the height of the card */
+    backface-visibility: hidden; /* Hide the back face until flipped */
+    transition: transform 2s ease; /* Add a 2-second transition for the transform property */
+    transform-style: preserve-3d; /* Ensure 3D transformations are preserved */
+    display: flex; /* Use flexbox for centering content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    border-radius: 50%;
+
+}
+.card-front {
+    z-index: 2; /* Make the front face visible by default */
+    transform: rotateY(0deg); /* Start with no rotation */
+}
+.card-back {
+    transform: rotateY(180deg); /* Rotate the back face to be hidden initially */
+}
+.card:hover .card-front {
+    transform: rotateY(-180deg); /* Flip the card to reveal the back face */
+}
+.card:hover .card-back {
+    transform: rotateY(0deg); /* Flip the card to reveal the back face */
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image fills the container */
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: gray 0 0 10px;
+}
+.card p {
+    padding: 100px;
+    background-color: #fff;
+    box-sizing: border-box;
+    backface-visibility: hidden; /* Hide the back face */
+    border-radius: 50%;
+    text-align: center; /* Center the text horizontally */
+    overflow: hidden; /* Hide any overflow */
+    word-wrap: break-word; /* Allow long words to break */
+}
+.social .card p {
+    padding: 90px;
+}
+.secretary .card p {
+    padding: 130px;
 }
