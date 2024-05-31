@@ -1,0 +1,9 @@
+.title-section{
+    background-color: red;
+}
+.title-section img {
+    max-width: 200px; /* Ensure the image does not exceed the width of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make the image a block element to center it horizontally */
+    margin: 0 auto; /* Center the image horizontally */
+}
