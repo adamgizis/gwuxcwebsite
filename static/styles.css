@@ -111,7 +111,9 @@ header {
 
 /* links settings */
 a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: rgb(0, 59, 92);
+}
 
 /* underline links on hover */
 a:hover {
