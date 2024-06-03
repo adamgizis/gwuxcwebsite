@@ -51,14 +51,14 @@
     margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 850px) {
     .hidden-words {
         display: none;
     }
 }
 
 /* Adjust layout for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     div.right-side.eboard-role {
         display: none;
     }
@@ -79,7 +79,8 @@
     .card {
         display: flex;
         justify-content: center; /* Center the card horizontally */
-        align-items: center;}
+        align-items: center;
+    }
 }
 
 
@@ -126,7 +127,7 @@
     box-shadow: gray 0 0 10px;
 }
 .card p {
-    padding: 100px;
+    padding: 163px;
     background-color: #fff;
     box-sizing: border-box;
     backface-visibility: hidden; /* Hide the back face */
@@ -134,6 +135,16 @@
     text-align: center; /* Center the text horizontally */
     overflow: hidden; /* Hide any overflow */
     word-wrap: break-word; /* Allow long words to break */
+}
+
+.president .card p {
+    padding: 105px;
+}
+.fundraising .card p {
+    padding: 105px;
+}
+.PR .card p {
+    padding: 105px;
 }
 .social .card p {
     padding: 90px;
