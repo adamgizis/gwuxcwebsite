@@ -1,6 +1,7 @@
 
 /* TITLE SECTION */
 
+/* Eboard pic settings */
 .title-section img {
     max-width: 65%; /* Ensure the image does not exceed the width of its container */
     height: auto; /* Maintain aspect ratio */
@@ -11,132 +12,131 @@
 }
 
 
+/* MEET EBOARD SECTION */
+
+/* eboard section layout*/
 .meet-eboard {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
 }
-
-/* MEET EBOARD SECTION */
-.left-side, .right-side {
-    align-items: center;
-    justify-content: center;
-}
-
 .left-side {
     flex: 1;
     padding-right: 20px;
 }
-
 .left-side .card {
     padding-left: 100px;
 }
-
 .right-side {
     flex: 1;
     padding-left: 20px;
 }
 
+/* sizing of text*/
 .meet-eboard h3 {
     font-size: 48px;
 }
-
 .meet-eboard a {
     font-size: 24px;
 }
 
+/*alignement of text*/
 .eboard-role {
     text-align: center;
     margin: 0 auto;
 }
 
+
+/*layout for smaller screens */
+@media (max-width: 850px) {
+    div.right-side.eboard-role {
+        display: none;
+    }
+    .eboard-role {
+        margin-bottom: 20px;
+        }
+    .individual-pic {
+        padding-left: 20px;
+    }
+    .meet-eboard {
+        flex-direction: column;
+    }
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* hiding elements for larger screens */
 @media (min-width: 850px) {
     .hidden-words {
         display: none;
     }
 }
 
-/* Adjust layout for smaller screens */
-@media (max-width: 850px) {
-    div.right-side.eboard-role {
-        display: none;
-    }
-    .eboard-role {
-        flex: 1;
-        padding-right: 20px;
-        }
-    .individual-pic {
-        flex: 1;
-        padding-left: 20px;
-    }
-    .meet-eboard {
-        flex-direction: column;
-    }
-    .eboard-role {
-        margin-bottom: 20px;
-    }
-    .card {
-        display: flex;
-        justify-content: center; /* Center the card horizontally */
-        align-items: center;
-    }
-}
 
+/* MAKING IMAGE FLIP */
 
-/* IMAGE FLIP */
+/* format of cards */
 .card {
-    perspective: 1000px; /* Create a 3D perspective */
-    width: 450px; /* Set the width of the card */
-    height: 450px; /* Set the height of the card */
+    perspective: 1000px;
+    width: 450px;
+    height: 450px;
     position: relative;
 }
 .card-front,
 .card-back {
     position: absolute;
-    width: 450px; /* Set the width of the card */
-    height: 450px; /* Set the height of the card */
-    backface-visibility: hidden; /* Hide the back face until flipped */
-    transition: transform 2s ease; /* Add a 2-second transition for the transform property */
-    transform-style: preserve-3d; /* Ensure 3D transformations are preserved */
-    display: flex; /* Use flexbox for centering content */
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
+    width: 450px;
+    height: 450px;
+    backface-visibility: hidden;
+    transition: transform 2s ease;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-
 }
+
+/* rotation of cards */
 .card-front {
-    z-index: 2; /* Make the front face visible by default */
-    transform: rotateY(0deg); /* Start with no rotation */
+    z-index: 2;
+    transform: rotateY(0deg);
 }
 .card-back {
-    transform: rotateY(180deg); /* Rotate the back face to be hidden initially */
+    transform: rotateY(180deg);
 }
 .card:hover .card-front {
-    transform: rotateY(-180deg); /* Flip the card to reveal the back face */
+    transform: rotateY(-180deg);
 }
 .card:hover .card-back {
-    transform: rotateY(0deg); /* Flip the card to reveal the back face */
+    transform: rotateY(0deg);
 }
+
+/* format of images on front of card */
 .card img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the image fills the container */
+    object-fit: cover;
     border-radius: 50%;
     border: 1px solid white;
     box-shadow: gray 0 0 10px;
 }
+
+/* format of paragraph on front of card */
 .card p {
     padding: 163px;
     background-color: #fff;
     box-sizing: border-box;
-    backface-visibility: hidden; /* Hide the back face */
+    backface-visibility: hidden;
     border-radius: 50%;
-    text-align: center; /* Center the text horizontally */
-    overflow: hidden; /* Hide any overflow */
-    word-wrap: break-word; /* Allow long words to break */
+    text-align: center;
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
+/* sizing of back of card for specific eboard roles */
 .president .card p {
     padding: 105px;
 }
