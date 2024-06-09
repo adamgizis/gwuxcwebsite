@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GWU Club Cross Country</title>
     <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../static/records.css">
+
 </head>
 <body>
+    <!--HEADER-->
     <header>
         <nav>
             <ul class="main-menu">
@@ -34,18 +37,797 @@
         </nav>
         <img class="header-logo" src="../static/images/logo-transparent.png" alt="Club XC Logo">
     </header>
+
+    <!--RECORDS SECTION-->
+    <main>
+        <section>
+            <h1>George Washington Club XC Records</h1>
+        </section>
+
+        <!--Cross Country Records-->
+        <section>
+            <h2>Cross Country Records</h2>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h3><u>Women's 6k</u></h3>
+                    <p>Name: Shannon Fitzpatrick</p>
+                    <p>Time: 22:36</p>
+                    <p>Course: Regionals (Lehigh)</p>
+                    <p>Year: 2017</p>
+                </div>
+                <div class="record-men">
+                    <h3><u>Men's 8k</u></h3>
+                    <p>Name: John Smith</p>
+                    <p>Time: 25:51</p>
+                    <p>Course: Regionals (Utica District Park)</p>
+                    <p>Year: 2019</p>
+                </div>
+            </div>
+        </section>
+
+        <!--TRACK RECORDS for individuals-->
+        <section>
+            <h2>Track Records - Individual</h2>
+        </section>
+        <!-- 100m Dash -->
+        <section class="event">
+            <h3><u>100m Dash</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Sylvia Oikeh</p>
+                    <p>Time: 12.76</p>
+                    <p>Meet: Patriot Track Classic</p>
+                    <p>Year: 2017</p>
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Jack Poland</p>
+                    <p>Time: 10.66</p>
+                    <p>Meet: Capital Relays</p>
+                    <p>Year: 2022</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-100m-men')">More Info</button>
+                        <div id="dropdown-100m-men" class="dropdown-content">
+                            <img src="../static/images/sal-eboard.png" alt="Jack 100m">
+                            <p>Description of Jack's race.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 200m Dash -->
+        <section class="event">
+            <h3><u>200m Dash</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Sylvia Oikeh</p>
+                    <p>Time: 12.76</p>
+                    <p>Meet: Patriot Track Classic</p>
+                    <p>Year: 2018</p>
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Jack Poland</p>
+                    <p>Time: 22.56</p>
+                    <p>Meet: Capital Relays</p>
+                    <p>Year: 2022</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-200m-men')">More Info</button>
+                        <div id="dropdown-200m-men" class="dropdown-content">
+                            <img src="../static/images/sal-eboard.png" alt="Jack 200m">
+                            <p>Description of Jack's race.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>      
+        <!-- 400m Run -->
+        <section class="event">
+            <h3><u>400m Run</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Zannia Ojibe</p>
+                    <p>Time: 1:06.95</p>
+                    <p>Meet: Terrapin Invite</p>
+                    <p>Year: 2019</p>
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Elliot Abnos</p>
+                    <p>Time: 52.67</p>
+                    <p>Meet: Banana Relays</p>
+                    <p>Year: 2023</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-400m-men')">More Info</button>
+                        <div id="dropdown-400m-men" class="dropdown-content">
+                            <img src="../static/images/sal-eboard.png" alt="Elliot 400m">
+                            <p>Description of Elliot's race.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 800m Run -->
+        <section class="event">
+            <h3><u>800m Run</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Lily Scherer</p>
+                    <p>Time: 2:31.96</p>
+                    <p>Meet: Terrapin Invite</p>
+                    <p>Year: 2024</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-800m-women')">More Info</button>
+                        <div id="dropdown-800m-women" class="dropdown-content">
+                            <img src="../static/images/sal-eboard.png" alt="Lily 800m">
+                            <p>Description of Lily's race.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Ellis Guzewich</p>
+                    <p>Time: 2:09.15</p>
+                    <p>Meet: Happy Valley Invite</p>
+                    <p>Year: 2017</p>
+                </div>
+            </div>
+        </section>
+        <!-- 1500m Run -->
+        <section class="event">
+            <h3><u>1500m Run</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Tania Rachidi</p>
+                    <p>Time: 5:14.01</p>
+                    <p>Course: UVA Cavalier Invite</p>
+                    <p>Year: 2024</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-1500m-women')">More Info</button>
+                        <div id="dropdown-1500m-women" class="dropdown-content">
+                            <img src="../static/images/sal-eboard.png" alt="Tania 1500m">
+                            <p>Description of Tania's race.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Ellis Guzewich</p>
+                    <p>Time: 4:28.90</p>
+                    <p>Meet: Capital Relays</p>
+                    <p>Year: 2019</p>
+                </div>
+            </div>
+        </section>
+        <!-- 1600m Run -->
+        <section class="event">
+            <h3><u>1600m Run</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Lyndsey Gallagher</p>
+                    <p>Time: 5:27.36</p>
+                    <p>Course: UVA Cavalier Invite</p>
+                    <p>Year: 2018</p>
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Ismael Torres Castrodad</p>
+                    <p>Time: 4:27</p>
+                    <p>Meet: Capital Relays/p>
+                    <p>Year: 2024</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-1600m-men')">More Info</button>
+                        <div id="dropdown-1600m-men" class="dropdown-content">
+                            <img src="../static/images/sal-eboard.png" alt="Ismael 1600m">
+                            <p>Description of Ismael's race.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 3000m Run -->
+        <section class="event">
+            <h3><u>3000m Run</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Ali Gavigan</p>
+                    <p>Time: 12:21</p>
+                    <p>Meet: Battle for DC</p>
+                    <p>Year: 2018</p>                    
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Joseph Politano</p>
+                    <p>Time: 10:13.88</p>
+                    <p>Meet: Happy Valley Invite</p>
+                    <p>Year: 2016</p>                    
+                </div>
+            </div>
+        </section>
+        <!-- 3200m Run -->
+        <section class="event">
+            <h3><u>3200m Run</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Michelle Singh</p>
+                    <p>Time: 14:17</p>
+                    <p>Meet: Patriot Track Classic</p>
+                    <p>Year: 2017</p>
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Ellis Guzewich</p>
+                    <p>Time: 10:46</p>
+                    <p>Meet: Patriot Track Classic</p>
+                    <p>Year: 2019</p>                    
+                </div>
+            </div>
+        </section>
+        <!-- 5000m Run -->
+        <section class="event">
+            <h3><u>5000m Run</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Tania Rachidi</p>
+                    <p>Time: 19:08</p>
+                    <p>Course: Capital Relays</p>
+                    <p>Year: 2024</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-5000m-women')">More Info</button>
+                        <div id="dropdown-5000m-women" class="dropdown-content">
+                            <img src="../static/images/sal-eboard.png" alt="Tania 5000m">
+                            <p>Description of Tania's race.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Sam Schroeder</p>
+                    <p>Time: 15:46.3</p>
+                    <p>Meet: Capital Relays</p>
+                    <p>Year: 2019</p>                    
+                </div>
+            </div>
+        </section>
+        <!-- 10000m Run -->
+        <section class="event">
+            <h3><u>100m Dash</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Joseph Politano</p>
+                    <p>Time: 44:00</p>
+                    <p>Meet: Patriot Track Classic</p>
+                    <p>Year: 2017</p>
+                </div>
+            </div>
+        </section>
+        <!-- 60m hurdles -->
+        <section class="event">
+            <h3><u>60m Hurdles</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Sylvia Oikeh</p>
+                    <p>Time: 12.14</p>
+                    <p>Meet: Happy Valley Classic</p>
+                    <p>Year: 2017</p>
+                </div>
+            </div>
+        </section>
+        <!-- 100m hurdles -->
+        <section class="event">
+            <h3><u>100m Hurdles</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Erin Donnelly</p>
+                    <p>Time: 28.11</p>
+                    <p>Meet: Terrapin Invite</p>
+                    <p>Year: 2019</p>
+                </div>
+            </div>
+        </section>
+        <!-- 400m hurdles -->
+        <section class="event">
+            <h3><u>400m Hurdles</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Erin Donnelly</p>
+                    <p>Time: 1:26.02</p>
+                    <p>Meet: Terrapin Invite</p>
+                    <p>Year: 2019</p>                    
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Jack Poland</p>
+                    <p>Time: 59.8</p>
+                    <p>Meet: Terrapin Invite</p>
+                    <p>Year: 2022</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-400m-hurdles-men')">More Info</button>
+                        <div id="dropdown-400m-hurdles-men" class="dropdown-content">
+                            <img src="../static/images/sal-eboard.png" alt="Jack 400m hurdles">
+                            <p>Description of John Smith's race.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 3000m steeplechase -->
+        <section class="event">
+            <h3><u>100m Dash</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Claire Haney</p>
+                    <p>Time: 12:58.17</p>
+                    <p>Meet: Terrapin Invite</p>
+                    <p>Year: 2022</p>                    
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Sam Schroeder</p>
+                    <p>Time: 9:50</p>
+                    <p>Meet: Terrapin Invite</p>
+                    <p>Year: 2019</p>                    
+                </div>
+            </div>
+        </section>
+
+        
+        <!--SPECIAL EVENT RECORDS-->
+        <section>
+            <h2>Track Records - Special Events</h2>
+        </section>
+        <!-- banana 400m -->
+        <section class="event">
+            <h3><u>400m Banana</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Claire Ackerman</p>
+                    <p>Time: 1:13.89</p>
+                    <p>Meet: Banana relays</p>
+                    <p>Year: 2023</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-400m-banana-women')">More Info</button>
+                        <div id="dropdown-400m-banana-women" class="dropdown-content">
+                            <img src="../static/images/sal-eboard.png" alt="Claire 400m banana">
+                            <p>Description of Claire's race.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Ian Cook</p>
+                    <p>Time: 1:03.22</p>
+                    <p>Meet: Banana relays</p>
+                    <p>Year: 2023</p>
+                </div>
+            </div>
+        </section>
+        <!-- chocalate milk mile -->
+        <section class="event">
+            <h3><u>Chocolate Milk Mile</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Carolyn/Amelia</p>
+                    <p>Time: unknown</p>
+                    <p>Meet: Banana relays</p>
+                    <p>Year: 2024</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-chocmilk-mile-women')">More Info</button>
+                        <div id="dropdown-chocmilk-mile-women" class="dropdown-content">
+                            <img src="../static/images/sal-eboard.png" alt="Amelia & Carolyn chocolate milk mile">
+                            <p>Description of Amelia & Carolyn's race.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Ian Cook</p>
+                    <p>Time: 5:59.18</p>
+                    <p>Meet: Banana relays</p>
+                    <p>Year: 2023</p>
+                </div>
+            </div>
+        </section>
+        <!-- 1500m race walk -->
+        <section class="event">
+            <h3><u>1500m Race Walk</u></h3>
+        </section>
+        <section>
+            <div class="record">                
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Adam Gizis</p>
+                    <p>Time: 9:28.94</p>
+                    <p>Meet: Terrapin Invite</p>
+                    <p>Year: 2024</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-1500m-racewalk-men')">More Info</button>
+                        <div id="dropdown-1500m-racewalk-men" class="dropdown-content">
+                            <img src="../static/images/sal-eboard.png" alt="Adam 1500m race walk">
+                            <p>Description of Adam's race.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--RELAY RECORDS-->
+        <section>
+            <h2>Track Records - Relays</h2>
+        </section>
+        <!-- 4x100m relay -->
+        <section class="event">
+            <h3><u>4x100m Relay</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Names: Brenna Reach, Zannia Ojibe, Taylor Lovullo, Sylvia Oikeh</p>
+                    <p></p>
+                    <p>Time: 1:00.82</p>
+                    <p>Meet: UVA Cavalier Invite</p>
+                    <p>Year: 2021</p>                    
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Names: Oliver Probst, Ellis Guzewich, Justin Gulino, Sam Schroeder, Dan Cooksey</p>
+                    <p>Time: 53.6</p>
+                    <p>Meet: Capital Relays</p>
+                    <p>Year: 2019</p>                    
+                </div>
+            </div>
+        </section>
+        <!-- 4x200m relay -->
+        <section class="event">
+            <h3><u>4x200m Relay</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Names: Cecilia Hartge, Jocelyn Shworak, Zannia Ojibe, Sylvia Oikeh</p>
+                    <p>Time: 2:04.01</p>
+                    <p>Meet: Penn Relays</p>
+                    <p>Year: 2018</p>                    
+                </div>                
+            </div>
+        </section>
+        <!-- 4x320m relay -->
+        <section class="event">
+            <h3><u>4x320m Relay</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Names: Brenna Reach, Jocelyn Shworak, Barbara Boylan, Zannia Oijbe</p>
+                    <p>Time: 3:57</p>
+                    <p>Meet: Battle for DC</p>
+                    <p>Year: 2018</p>                    
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Names: Chris Kalloo, Andryc Evich, Nick Sapountzis, Dan Cooksey</p>
+                    <p>Time: 2:59</p>
+                    <p>Meet: Battle for DC</p>
+                    <p>Year: 2015</p>
+                </div>
+            </div>
+        </section>
+        <!-- 4x400m relay -->
+        <section class="event">
+            <h3><u>4x400m Relay</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Names: Zannia Ojibe, Hannah Barry, Brenna Reach, Cecilia Hartge</p>
+                    <p>Time: 4:45.47</p>
+                    <p>Meet: Penn Relays</p>
+                    <p>Year: 2018</p>                    
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Names: Garrett Mastella, Jack Poland, Ian Cook, Elliot Abnos</p>
+                    <p>Time: 3:51.10</p>
+                    <p>Meet: Capital Relays</p>
+                    <p>Year: 2023</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-400m-relay-men')">More Info</button>
+                        <div id="dropdown-400m-relay-men" class="dropdown-content">
+                            <img src="../static/images/sal-eboard.png" alt="4 by 400m relay">
+                            <p>Description of 400m relay race.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 4x800m relay -->
+        <section class="event">
+            <h3><u>4x800m Relay</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Names: Maddeline Maney, Sam Shenk, Liz Brew, Paige Botie</p>
+                    <p>Time: 11:11</p>
+                    <p>Meet: Cavalier Invite</p>
+                    <p>Year: 2015</p>                    
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Names: Jack Connolly, Alec Gonzalez, Ellis Guzewich, Oliver Probst</p>
+                    <p>Time: 9:24.43</p>
+                    <p>Meet: Penn Relays</p>
+                    <p>Year: 2018</p>
+                </div>
+            </div>
+        </section>
+        <!-- distance medley relay -->
+        <section class="event">
+            <h3><u>Distance Medly Relay</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Names: Sylvia Oikeh, Jocelyn Shworak, Zannia Ojibe, Barbara Boylan</p>
+                    <p>Time: 4:56.24</p>
+                    <p>Meet: Penn Relays</p>
+                    <p>Year: 2018</p>
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Names: Oliver Probst, Jack Connolly, Tommy Lane, someone else</p>
+                    <p>Time: 12:00</p>
+                    <p>Meet: Penn Relays</p>
+                    <p>Year: 2018</p>                    
+                </div>
+            </div>
+        </section>
+        <!-- sprint medley relay -->
+        <section class="event">
+            <h3><u>Sprint Medley Relay</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Names: Lyndsey Gallagher, Ali Gavigan, Cecilia Hartge, Lily Shpak</p>
+                    <p>Time: 14.21</p>
+                    <p>Meet: Battle for DC</p>
+                    <p>Year: 2018</p>                    
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Alec Gonzalez, Oliver Probst, Jack Connolly, Ellis Guzewich</p>
+                    <p>Time: 4:15.72</p>
+                    <p>Course: Penn Relays</p>
+                    <p>Year: 2018</p>
+                </div>
+            </div>
+        </section>
+        <!-- swedish relay -->
+        <section class="event">
+            <h3><u>Swedish Relay</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Names: Morgan Fisher, Lily Shan, Marlena Pegolo, Lily Scherer</p>
+                    <p>Time: 2:56.06</p>
+                    <p>Meet: Terrapin Invite</p>
+                    <p>Year: 2024</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-swedish-relay-women')">More Info</button>
+                        <div id="dropdown-swedish-relay-women" class="dropdown-content">
+                            <img src="../static/images/sal-eboard.png" alt="swedish relay">
+                            <p>Description of swedish relay.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Names: Christian Williams, Ryan Geoghegan, Adam Gizis, Salvatore Spillane</p>
+                    <p>Time: 2:46.94</p>
+                    <p>Meet: Terrapin Invite</p>
+                    <p>Year: 2024</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-swedish-relay-men')">More Info</button>
+                        <div id="dropdown-swedish-relay-men" class="dropdown-content">
+                            <img src="../static/images/sal-eboard.png" alt="swedish relay">
+                            <p>Description of swedish relay.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--FIELD RECORDS-->
+        <section>
+            <h2>Field Records</h2>
+        </section>
+        <!-- high jump -->
+        <section class="event">
+            <h3><u>High Jump</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Amelia Ansell</p>
+                    <p>Height: 3'9"</p>
+                    <p>Meet: UVA Cavalier Invite</p>
+                    <p>Year: 2024</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-high-jump-women')">More Info</button>
+                        <div id="dropdown-high-jump-women" class="dropdown-content">
+                            <img src="../static/images/sal-eboard.png" alt="Amelia high jump">
+                            <p>Description of Amelia's high jump.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Tommy Lane</p>
+                    <p>Height: 1.72m</p>
+                    <p>Meet: Happy Valley Invite</p>
+                    <p>Year: 2017</p>
+                </div>
+            </div>
+        </section>
+        <!-- long jump -->
+        <section class="event">
+            <h3><u>Long Jump</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Morgan Fisher</p>
+                    <p>Distance: 3.00m</p>
+                    <p>Course: Terrapin Invite</p>
+                    <p>Year: 2024</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-long-jump-women')">More Info</button>
+                        <div id="dropdown-long-jump-women" class="dropdown-content">
+                            <img src="../static/images/sal-eboard.png" alt="Morgan long jump">
+                            <p>Description of Morgan's long jump.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Daniel Balledos</p>
+                    <p>Distance: 4.9m</p>
+                    <p>Meet: Terrapin Invite</p>
+                    <p>Year: 2019</p>
+                </div>
+            </div>
+        </section>
+        <!-- triple jump -->
+        <section class="event">
+            <h3><u>Triple Jump</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Katie Parnow</p>
+                    <p>Distance: 7.62m</p>
+                    <p>Meet: Terrapin Invite</p>
+                    <p>Year: 2019</p>
+                </div>
+            </div>
+        </section>
+        <!-- shotput -->
+        <section class="event">
+            <h3><u>Shotput</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p>Name: Cindy Swanson</p>
+                    <p>Distance: .13m</p>
+                    <p>Course: Happy Valley Invite</p>
+                    <p>Year: 2016</p>
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p>Name: Ryan Geoghegan</p>
+                    <p>Distance: 13-03.00</p>
+                    <p>Course: JMU Invite</p>
+                    <p>Year: 2023</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-shotput-men')">More Info</button>
+                        <div id="dropdown-shotput-men" class="dropdown-content">
+                            <img src="../static/images/sal-eboard.png" alt="Ryan shotput">
+                            <p>Description of Ryan's shotput.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!--KRISPY KREME 5k-->
+         <section>
+            <h2>Krispy Krme 5k Records</h2>
+        </section>
+        <section>
+            <div class="record-men">
+                <h4>Men's Record</h4>
+                <p>Name: Zack Martin</p>
+                <p>Time: 23:58</p>
+                <p>Year: 2022</p>
+            </div>
+        </section>
+    </main>
+ 
+    <!--JAVA FOR DROPDOWN SECTION-->
+    <script>
+        function toggleDropdown(id) {
+            var dropdown = document.getElementById(id);
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
     
-    <section class="title-section">
-        <h1 class="page-title">Club Records</h1>
-        <h2 class="page-subtitle">Cross Country & Track records</h2>
-    </section>
 
-
-    <section>
-        <p>coming soon...</p>
-    </section>
-    
-
+    <!--FOOTER-->
     <footer>
         <p>
             George Washington University · 
@@ -66,6 +848,7 @@
         </nav>
     </footer>
 
+    <!--JAVA FOR HAMBURGER MENU-->
     <script>
         // Select the hamburger menu and off-screen menu elements
         const hamMenu = document.querySelector(".hamburger-menu");
