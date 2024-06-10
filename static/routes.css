@@ -1,0 +1,83 @@
+
+.routes-section {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    grid-auto-rows: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.routes-section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+.routes-section img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.routes-section a {
+    display: block;
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 20px;
+}
+.routes-section a:hover {
+    text-decoration: underline;
+}
+
+.routes-section p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* MAKING IMAGE FLIP */
+
+/* format of cards */
+.card {
+    perspective: 1000px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0px;
+    padding: 0px;    
+    border-radius: 0px;
+    transform: translateY(-20px);
+}
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 2s ease;
+    transform-style: preserve-3d;
+}
+
+/* rotation of cards */
+.card-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.card-back {
+    transform: rotateY(180deg);
+}
+.card:hover .card-front {
+    transform: rotateY(-180deg);
+}
+.card:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+/* format of images on front of card */
+.card img {
+    object-fit: cover;
+}
