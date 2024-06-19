@@ -43,9 +43,41 @@
         <h2 class="page-subtitle">GW’s finest running club since 2012.</h2>
     </section>
 
-    <section class="team-pic">
-        <img src="../static/images/team-pic.jpeg" alt="GW Club XC team pic">
+    <section class="slideshow-container">
+        <div class=backward-arrow>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        </div>
+        <div class="slides-wrapper">
+            <div class="mySlides fade">
+                <img src="../static/images/team-pic-dc-invite-23.jpg" alt="DC Invite 2023">
+                <div class="text-overlay">
+                    DC Invite 2023
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="../static/images/team-pic-uva-24.jpg" alt="UVA Invite 2024">
+                <div class="text-overlay">
+                    UVA Invitational 2024
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="../static/images/team-pic-banana-relays-24.jpeg" alt="Banana Relays 2024">
+                <div class="text-overlay">
+                    Banana Relays 2024
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="../static/images/team-pic-uva-23.jpg">
+                <div class="text-overlay">
+                    UVA Invitational 2023
+                </div>
+            </div>     
+        </div>
+        <div class=forward-arrow>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
     </section>
+
 
     <section class="practice-section">
         <div class="practice-join-us">
@@ -252,6 +284,42 @@
         }
     });
     </script>
+
+    <!--SLIDESHOW-->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        // Function to show slides
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";  
+        }
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        // Automatic slideshow
+        function autoShowSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(autoShowSlides, 10000); // Change image every 2 seconds
+        }
+        // Start automatic slideshow
+        autoShowSlides();
+    </script>
+
 
     <!--FADE IN-->
     <script>

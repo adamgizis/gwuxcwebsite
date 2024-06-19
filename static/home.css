@@ -17,17 +17,97 @@
 }
 
 
+/* SLIDESHOW */
+.slideshow-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-content: center;
 
+}
 
-/* TEAM PIC */
+.slides-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
 
-.team-pic img {
+.slideshow-container img {
     max-width: 100%; /* Ensure the image does not exceed the width of its container */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Make the image a block element to center it horizontally */
     margin: 0 auto; /* Center the image horizontally */
+    box-shadow: gray 0 0 5px;
 }
 
+.mySlides {
+    display: none;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {opacity: .8} 
+    to {opacity: 1}
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 24px;
+    background-color: rgb(0, 59, 92, .8); /* Semi-transparent background */
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    border-radius: 5%;
+}
+
+/* Style for navigation arrows */
+.prev, .next {
+    cursor: pointer;
+    width: auto;
+    padding: 24px; /* Increase the padding for more space around the arrows */
+    font-weight: bold;
+    font-size: 36px; /* Increase the font size to make the arrows larger */
+    transition: 0.6s ease;
+    user-select: none;
+    z-index: 1; /* Ensure the arrows are on top of other elements */
+}
+
+.next {
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    border-radius: 3px 3px 0 0;
+}
+
+.prev:hover, .next:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+@media (min-width: 900px) {
+    .text-overlay {
+        font-size: 30px;
+    }
+    .slideshow-container img {
+        width: 85%;
+    }
+    .prev, .next {
+        font-size: 56px;
+    }
+    
+}
 
 /* PRACTICE INFO */
 
@@ -190,7 +270,7 @@ div.practice-join-us{
 }
 
 .links-section a:hover img {
-    opacity: 0.8; /* Add a hover effect if desired */
+    opacity: 0.8;
 }
 
 .mailchimp {
