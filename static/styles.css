@@ -250,3 +250,9 @@ footer nav img {
 footer nav a:hover img {
     opacity: 0.8; /* Add a hover effect if desired */
 }
+
+@media (max-width: 450px) {
+    .header-logo {
+        display: none; 
+    }
+}

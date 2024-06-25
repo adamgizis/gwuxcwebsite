@@ -337,7 +337,7 @@ div.indicates-required{
         gap: 0px;
     }
 
-    .mobile-hide, .header-logo {
+    .mobile-hide {
         display: none; 
     }
 
