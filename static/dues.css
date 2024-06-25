@@ -49,3 +49,13 @@ main {
 .info-section p {
     margin: 10px 0;
 }
+
+
+@media (max-width: 584px) {
+    .page-title {
+        font-size: 48px;
+    }
+    .page-subtitle {
+        font-size: 32px;
+    }
+}

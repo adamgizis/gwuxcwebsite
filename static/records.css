@@ -97,3 +97,27 @@ button {
 }
 button:hover {
     opacity: 0.8; }
+
+
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 45px;
+    }
+    .record {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+        margin: 20px 5vw;
+        box-sizing: border-box;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+}

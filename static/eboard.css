@@ -37,34 +37,6 @@
 }
 
 
-
-
-/*layout for smaller screens */
-@media (max-width: 850px) {
-    div.right-side.eboard-role {
-        display: none;
-    }
-    .eboard-role {
-        margin-bottom: 20px;
-        }
-
-    .meet-eboard {
-        flex-direction: column;
-    }
-    .card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-/* hiding elements for larger screens */
-@media (min-width: 850px) {
-    .hidden-words {
-        display: none;
-    }
-}
-
-
 /* MAKING IMAGE FLIP */
 
 /* format of cards */
@@ -72,19 +44,16 @@
     perspective: 1000px;
     width: 450px;
     height: 450px;
-    position: relative;
+    
 }
 .card-front,
 .card-back {
     position: absolute;
-    width: 450px;
-    height: 450px;
+    width: 100%;
+    height: 100%;
     backface-visibility: hidden;
     transition: transform 2s ease;
     transform-style: preserve-3d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 50%;
 }
 
@@ -115,7 +84,6 @@
 
 /* format of paragraph on front of card */
 .card p {
-    padding: 163px;
     background-color: #fff;
     box-sizing: border-box;
     backface-visibility: hidden;
@@ -123,24 +91,69 @@
     text-align: center;
     overflow: hidden;
     word-wrap: break-word;
+    width: 100%;
+    height: 100%;
+    padding: 90px;
 }
 
-/* sizing of back of card for specific eboard roles */
-.president .card p {
-    padding: 105px;
+
+
+/* ADJUSTING SIZING FOR MOBILE */
+
+/*layout for smaller screens */
+@media (max-width: 850px) {
+    .title-section img {
+        max-width: 90%;
+    }
+    div.right-side.eboard-role {
+        display: none;
+    }
+    .eboard-role {
+        margin-bottom: 20px;
+        }
+
+    .meet-eboard {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
-.vice-president .card p {
-    padding: 90px;
+/* hiding elements for larger screens */
+@media (min-width: 850px) {
+    .hidden-words {
+        display: none;
+    }
 }
-.fundraising .card p {
-    padding: 105px;
-}
-.PR .card p {
-    padding: 105px;
-}
-.social .card p {
-    padding: 90px;
-}
-.secretary .card p {
-    padding: 130px;
+
+/* adjusting for movile device */
+@media (max-width: 600px) {
+    .title-section img {
+        max-width: 100%;
+    }
+    .meet-eboard h3 {
+        font-size: 30px;
+        margin: 15px;
+    }
+    .meet-eboard a {
+        font-size: 20px;
+    }
+    .card {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    .card p {
+        background-color: #fff;
+        box-sizing: border-box;
+        backface-visibility: hidden;
+        border-radius: 50%;
+        text-align: center;
+        overflow: hidden;
+        word-wrap: break-word;
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+        padding-top: 60px;
+        font-size: 12px;
+    }
 }
