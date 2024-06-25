@@ -242,6 +242,7 @@ figcaption {
     font-size: 48px;
     margin-top: 100px;
     margin-bottom: -20px;
+    text-align: center;
 }
 
 /* button customizations */
@@ -329,7 +330,7 @@ div.indicates-required{
         flex-direction: column;
     }
 
-    .fun-pics figure, .race-pics figure {
+    .fun-run-pics figure, .race-pics figure, .extra-pics figure, .dc-pics figure {
         max-width: 80%;
     }
 
