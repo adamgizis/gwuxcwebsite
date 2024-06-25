@@ -130,6 +130,9 @@
     .title-section img {
         max-width: 100%;
     }
+    .page-title {
+        font-size: 45px;
+    }
     .meet-eboard h3 {
         font-size: 30px;
         margin: 15px;
@@ -143,15 +146,6 @@
         margin-bottom: 30px;
     }
     .card p {
-        background-color: #fff;
-        box-sizing: border-box;
-        backface-visibility: hidden;
-        border-radius: 50%;
-        text-align: center;
-        overflow: hidden;
-        word-wrap: break-word;
-        width: 100%;
-        height: 100%;
         padding: 50px;
         padding-top: 60px;
         font-size: 12px;

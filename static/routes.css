@@ -1,6 +1,6 @@
 
 .title-section {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .routes-section {
@@ -10,7 +10,7 @@
     grid-auto-rows: 1fr;
     padding: 20px;
     box-sizing: border-box;
-    row-gap: 150px;
+    row-gap: 120px;
     margin-bottom: 100px;
 }
 

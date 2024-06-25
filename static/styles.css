@@ -176,6 +176,10 @@ a:visited {
     .main-menu {
         display: none; 
     }
+    header{
+        height: 150px;
+    }
+    
 }
 
 @media (min-width: 950px) {
