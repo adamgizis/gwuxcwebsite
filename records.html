@@ -91,9 +91,14 @@
                 <div class="record-men">
                     <h4>Men's Record</h4>
                     <p class="name">Jack Poland</p>
-                    <p>Time: 10.66</p>
-                    <p>Meet: Capital Relays</p>
-                    <p>Year: 2022</p>
+                    <p>Time: 10.42</p>
+                    <p>Meet: UMBC Retriever Invitational</p>
+                    <p>Year: 2025</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-100m-men')">Jack's Race</button> <!-- If you wany to add a dropdown button, follow this format of code -->
+                        <div id="dropdown-100m-men" class="dropdown-content">
+                            <img src="../static/images/records/mens-100.JPEG" alt="Jack 200m">                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -172,17 +177,14 @@
                 </div>
                 <div class="record-men">
                     <h4>Men's Record</h4>
-                    <p class="name">Connor Mayr</p>
-                    <p>Time: 2:09</p>
-                    <p>Meet: Capital Relays</p>
+                    <p class="name">Ismael Torres Castrodad</p>
+                    <p>Time: 2:01.28</p>
+                    <p>Meet: UMBC Retriever Invitational</p>
                     <p>Year: 2025</p>
                     <div class="dropdown">
-                        <button onclick="toggleDropdown('dropdown-800m-men')">Connor's Race</button>
+                        <button onclick="toggleDropdown('dropdown-800m-men')">Ismael's Race</button>
                         <div id="dropdown-800m-men" class="dropdown-content">
-                            <img src="../static/images/records/connor-800.jpg" alt="Lily 800m">
-                            <p>
-                                Connor started out the 800m strong. Very speedy. At the end with 100m to go, Connor threw his gloves at the cheering crowd striking Matt in the face. Connor crossed the finish line triumphantly receiving a club record. Go Connor!
-                            </p>
+                            <img src="../static/images/records/mens-800.JPEG" alt="Ismael 800m">
                         </div>
                     </div>
                 </div>
@@ -231,14 +233,14 @@
                 </div>
                 <div class="record-men">
                     <h4>Men's Record</h4>
-                    <p class="name">Ismael Torres Castrodad</p>
-                    <p>Time: 4:27</p>
-                    <p>Meet: Capital Relays</p>
-                    <p>Year: 2024</p>
+                    <p class="name">Connor Mayr</p>
+                    <p>Time: 4:19.99</p>
+                    <p>Meet: UMBC Retriever Invitational</p>
+                    <p>Year: 2025</p>
                     <div class="dropdown">
-                        <button onclick="toggleDropdown('dropdown-1600m-men')">Ismael's Race</button>
+                        <button onclick="toggleDropdown('dropdown-1600m-men')">Connor's Race</button>
                         <div id="dropdown-1600m-men" class="dropdown-content">
-                            <img src="../static/images/records/ismael-1600.JPG" alt="Ismael 1600m">                        </div>
+                            <img src="../static/images/records/mens-1600.JPEG" alt="Connor 1600m">                        </div>
                     </div>
                 </div>
             </div>
@@ -591,14 +593,14 @@
                 </div>
                 <div class="record-men">
                     <h4>Men's Record</h4>
-                    <p class="name">Garrett Mastella, Jack Poland, Ian Cook, Elliot Abnos</p>
-                    <p>Time: 3:51.10</p>
-                    <p>Meet: Capital Relays</p>
+                    <p class="name">Jack Poland, Connor Mayr, Garrett Mastella, Ismael Torres Castrodad</p>
+                    <p>Time: 3:42.96</p>
+                    <p>Meet: UMBC Retriever Invitational</p>
                     <p>Year: 2023</p>
                     <div class="dropdown">
                         <button onclick="toggleDropdown('dropdown-400m-relay-men')">The Relay</button>
                         <div id="dropdown-400m-relay-men" class="dropdown-content">
-                            <img src="../static/images/records/mens-4x400.jpg" alt="4 by 400m relay">                        </div>
+                            <img src="../static/images/records/mens-4x400.JPEG" alt="4 by 400m relay">                        </div>
                     </div>
                 </div>
             </div>
@@ -703,6 +705,40 @@
                 </div>
             </div>
         </section>
+        <!-- swedish relay -->
+        <section class="event">
+            <h3><u>Scooter Cart 4x100m</u></h3>
+        </section>
+        <section>
+            <div class="record relay">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p class="name">Lilly Tinker, Katy Jones, McKenna Podworski, Gabi Gilberti</p>
+                    <p>Time: 5:45.25</p>
+                    <p>Meet: UMBC Retriever Invitational</p>
+                    <p>Year: 2025</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-scooter-women')">The Relay</button>
+                        <div id="dropdown-scooter-women" class="dropdown-content">
+                            <img src="../static/images/records/womens-scooter.JPEG" alt="women's scooter relay">
+                        </div>
+                    </div>
+                </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p class="name">Mitch Archer, Francis Garcia, Michael Wisker, Samuel Beltran</p>
+                    <p>Time: 4:43.91</p>
+                    <p>Meet: UMBC Retriever Invitational</p>
+                    <p>Year: 2025</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-scooter-men')">The Relay</button>
+                        <div id="dropdown-scooter-men" class="dropdown-content">
+                            <img src="../static/images/records/mens-scooter.JPEG" alt="men's scooter relay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--FIELD RECORDS-->
         <section>
@@ -786,24 +822,46 @@
             <div class="record">
                 <div class="record-women">
                     <h4>Women's Record</h4>
-                    <p class="name">Cindy Swanson</p>
-                    <p>Distance: .13m</p>
+                    <p class="name">Rhiannon Novick</p>
+                    <p>Distance: 19'8"</p>
                     <p>Meet: Happy Valley Invite</p>
                     <p>Year: 2016</p>
-                </div>
-                <div class="record-men">
-                    <h4>Men's Record</h4>
-                    <p class="name">Ryan Geoghegan</p>
-                    <p>Distance: 13-03.00</p>
-                    <p>Meet: JMU Invite</p>
-                    <p>Year: 2023</p>
                     <div class="dropdown">
-                        <button onclick="toggleDropdown('dropdown-shotput-men')">Ryan's Throw</button>
-                        <div id="dropdown-shotput-men" class="dropdown-content">
-                            <img src="../static/images/records/ryan-shotput.JPG" alt="Ryan shotput">
+                        <button onclick="toggleDropdown('dropdown-shotput-women')">Rhiannon's Throw</button>
+                        <div id="dropdown-shotput-women" class="dropdown-content">
+                            <img src="../static/images/records/womens-shotput.JPEG" alt="Rhiannon shotput">
                         </div>
                     </div>
                 </div>
+                <div class="record-men">
+                    <h4>Men's Record</h4>
+                    <p class="name">Mitch Archer</p>
+                    <p>Distance: 16'2"</p>
+                    <p>Meet: UMBC Retriever Invitational</p>
+                    <p>Year: 2025</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('dropdown-shotput-men')">Mitch's Throw</button>
+                        <div id="dropdown-shotput-men" class="dropdown-content">
+                            <img src="../static/images/records/mens-shotput.JPEG" alt="Mitch shotput">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- discus -->
+        <section class="event">
+            <h3><u>Discus</u></h3>
+        </section>
+        <section>
+            <div class="record">
+                <div class="record-women">
+                    <h4>Women's Record</h4>
+                    <p class="name">Rhiannon Novick</p>
+                    <p>Distance: 43'7"</p>
+                    <p>Meet: UMBC Retriever Invitational</p>
+                    <p>Year: 2025</p>
+                </div>
+                <div class="empty"></div>
             </div>
         </section>
 
